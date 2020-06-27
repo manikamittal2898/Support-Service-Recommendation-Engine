@@ -1,0 +1,217 @@
+body{
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png); 
+}
+.card-img-top{
+  height:220px;
+}
+.right{
+    margin-left: 800px;
+}
+.signup{
+  width: 390px;
+}
+#art{
+
+  max-width: 100%;
+}
+
+
+.proa{
+font-size: 30px;
+}
+.navbar{
+    background-color: #007db8;  
+}
+#drop{
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 350px;   
+    
+    min-width: 350px;   
+    margin-top: 10px;
+}
+#box{
+    
+    font-size: 25px;
+    
+    background:white;
+    height: 500px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 100px;
+}
+#box1{
+  
+  background:white;
+  height: 700px;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+}
+/* img{
+    width: 100%;
+    margin-top: 70px;
+    
+} */
+.left{
+    background: lightslategrey;
+}
+  
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  
+  
+  
+  
+  /*---------------------------------------------*/
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  
+  
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; }
+  input:focus::-moz-placeholder { color:transparent; }
+  input:focus:-ms-input-placeholder { color:transparent; }
+  
+  
+  
+  input::-webkit-input-placeholder { color: #adadad;}
+  input:-moz-placeholder { color: #adadad;}
+  input::-moz-placeholder { color: #adadad;}
+  input:-ms-input-placeholder { color: #adadad;}
+  
+  
+  
+  /*---------------------------------------------*/
+  
+  
+  /*---------------------------------------------*/
+  .container {
+      max-width: 1200px;
+  }
+  
+  /* button{
+    
+      width: 390px;;
+      
+      
+  } */
+
+
+
+  
+  
+  
+  
+  
+  .wrap-contact100 {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin:auto;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  
+  
+  
+  
+  /*------------------------------------------------------------------
+  [ Input ]*/
+  
+  .wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+  }
+  
+  .label-input100 {
+   
+    font-size: 13px;
+    color: #007db8;
+    line-height: 1.5;
+    padding-left: 5px;
+  }
+  
+  .input100 {
+    display: block;
+    width: 100%;
+    background: transparent;
+   
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.2;
+    padding: 0 5px;
+  }
+  
+  .focus-input100 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .focus-input100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  
+    background: #007db8;
+  }
+  
+  
+  /*---------------------------------------------*/
+  input.input100 {
+    height: 40px;
+  }
+  
+  
+  
+  
+  
+  .input100:focus + .focus-input100::before {
+    width: 100%;
+  }
+  
+  .has-val.input100 + .focus-input100::before {
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  

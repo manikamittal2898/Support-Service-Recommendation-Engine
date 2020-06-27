@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <p class="text-center mt-5 mb-5 proa" >Products</p>
+    <div class="card-deck ">
+        
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{ url_for('static', filename='gam1.webp')}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">ALIENWARE M15 GAMING LAPTOP</h5>
+                      <p class="card-text">15-inch thin and light Alienware gaming laptop. Featuring exceptional battery life, premium materials and impressive power.</p>
+                      <a href="#" class="btn btn-primary">Interested</a>
+                    </div>
+                  </div>
+                  
+            <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{{ url_for('static', filename='gam2.webp')}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">ALIENWARE AREA-51M GAMING LAPTOP</h5>
+                          <p class="card-text">Revolutionary 43.18 cm (17) gaming laptop with upgradeable, overclockable desktop 9th Gen Intel® Core™ processors and NVIDIA GPUs, plus a magnesium alloy chassis.</p>
+                          <a href="#" class="btn btn-primary">Interested</a>
+                    </div>
+            </div>      
+                        
+                                     
+    </div>
+</div>
+
+{% endblock content %}

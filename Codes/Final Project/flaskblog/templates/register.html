@@ -1,0 +1,175 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}  
+
+<div id="box1" class="container">
+      
+    <h4 class="text-center pt-2 mb-5">Create a New Account</h4>
+            <div class="wrap-contact100">
+                <form method="POST" action="">
+                    <div class="form-row form-group">
+                        <div class="col">
+                                {{ form.hidden_tag() }}
+                                {{ form.firstname.label(class="form-control-label") }}
+
+                                {% if form.firstname.errors %}
+                                {{ form.firstname(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.firstname.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% else %}
+                                {{ form.firstname(class="form-control form-control-md") }}
+                                {% endif %}
+                               
+                                </div>
+            
+                        <div class="ml-4 col">
+                                {{ form.hidden_tag() }}
+                                {{ form.lastname.label(class="form-control-label") }}
+                                
+                                {% if form.firstname.errors %}
+                                {{ form.lastname(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.lastname.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% else %}
+                                {{ form.lastname(class="form-control form-control-md") }}
+                                {% endif %}
+
+                                
+                                
+                        </div>       
+                    </div>
+
+                    <div class="form-row">
+                          
+                        <div class="col">
+                                {{ form.hidden_tag() }}
+                                {{ form.gender.label(class="form-control-label") }}
+
+                               
+                                {{ form.gender(class="form-control form-control-md ") }}
+                               
+                               
+                                
+                               
+                               
+                        </div>
+                        
+                        <div class="ml-4 col">
+                                {{ form.hidden_tag() }}
+                                {{ form.age.label(class="form-control-label") }}
+
+                                {% if form.firstname.errors %}
+                                {{ form.age(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.age.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% else %}
+                                {{ form.age(class="form-control form-control-mdr") }}
+                                {% endif %}
+                               
+                        </div>
+                        
+                    </div> 
+
+
+                    <div class="form-row">
+                          
+                        <div class="col">
+                                {{ form.hidden_tag() }}
+                                {{ form.mbc.label(class="form-control-label") }}
+
+                               
+                                {{ form.mbc(class="form-control form-control-md ") }}
+                               
+                               
+                                
+                               
+                               
+                        </div>
+                        
+                        <div class="ml-4 col">
+                                {{ form.hidden_tag() }}
+                                {{ form.purpose.label(class="form-control-label") }}
+
+                                {{ form.purpose(class="form-control form-control-sm pr-5") }}
+                                
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                            {{ form.hidden_tag() }}
+                            {{ form.email.label(class="form-control-label") }}
+
+                            {% if form.email.errors %}
+                                {{ form.email(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.email.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% else %}
+                                {{ form.email(class="form-control form-control-md") }}
+                                {% endif %}
+                            
+                    </div> 
+
+                    <div>
+                            {{ form.hidden_tag() }}
+                            {{ form.password.label(class="form-control-label") }}
+
+                            {% if form.password.errors %}
+                                {{ form.password(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.password.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% else %}
+                                {{ form.password(class="form-control form-control-md") }}
+                                {% endif %}
+                            
+                    </div> 
+
+                    <div>
+                            {{ form.hidden_tag() }}
+                            {{ form.confirm_password.label(class="form-contorl-label") }}
+                            
+                            {% if form.confirm_password.errors %}
+                                {{ form.confirm_password(class="form-control form-control-md is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.confirm_password.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                                {% else %}
+                                {{ form.confirm_password(class="form-control form-control-md") }}
+                                {% endif %}
+                            
+                            
+                            
+                    </div>
+                    
+                    {{ form.submit(class="btn btn-primary mt-4 signup") }}
+                </form>
+            </div>
+            
+</div>
+{% endblock content %}

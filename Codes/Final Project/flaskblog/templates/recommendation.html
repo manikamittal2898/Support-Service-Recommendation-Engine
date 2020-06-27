@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% for obj in lista %}
+<div class="container">
+    <div id="art" class="card">
+        <div class="card-header">
+            {{ obj }}
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">{{ obj }}</h4>
+            <p class="card-text"></p>
+            <a class="btn btn-success" href="#">Accept</a>
+            <a class="btn btn-danger" data-toggle="modal" data-target="#myModal" href="#">Reject</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+
+ <!-- MODAL -->
+ <div class="modal" id="myModal">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Modal Title</h5>
+         <button class="close" data-dismiss="modal">&times;</button>
+       </div>
+       <div class="modal-body">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis
+         architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo.
+       </div>
+       <div class="modal-footer">
+        <button class="btn btn-secondary " data-dismiss="modal">Not Relevent</button>
+         <button class="btn btn-secondary" data-dismiss="modal">Unhappy with the Service...</button>
+
+
+         
+       </div>
+     </div>
+   </div>
+ </div>
+
+{% endblock content %}

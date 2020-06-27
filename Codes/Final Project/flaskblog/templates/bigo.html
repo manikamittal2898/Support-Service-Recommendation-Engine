@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+
+                <div class="container">
+                        <p class="text-center mt-5 mb-5 proa" >Products</p>
+                        <div class="card-deck ">
+                            
+                                <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="{{ url_for('static', filename='work1.webp')}}" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Precision 3630 Tower Workstation</h5>
+                                          <p class="card-text">Harness the power of workstation performance, VR content creation and reliability in an affordable, smaller yet expandable tower design.</p>
+                                          <a href="#" class="btn btn-primary">Interested</a>
+                                        </div>
+                                      </div>
+                                      
+                                <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="{{ url_for('static', filename='work2.webp')}}" alt="Card image cap">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Precision 3431 Desktop Workstation</h5>
+                                              <p class="card-text">Next-gen graphics and enhanced memory are more accessible than ever on this small form factor design with the latest Intel® Core™ or Xeon® processors.</p>
+                                              <a href="#" class="btn btn-primary">Interested</a>
+                                        </div>
+                                </div>    
+                                
+                                <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="{{ url_for('static', filename='m1.jpg')}}" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">PowerEdge M830 Blade Server</h5>
+                                          <p class="card-text">Accelerate application performance, consolidation and time-to-value for data center or office workloads with manageable, high-density blades.</p>
+                                          <a href="#" class="btn btn-primary">Interested</a>
+                                    </div>
+                            </div> 
+                            
+                            <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="{{ url_for('static', filename='m2.png')}}" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">PowerEdge M1000e Blade Enclosure</h5>
+                                      <p class="card-text">Environments needing to consolidate computing resources to maximize efficiency. Ultra dense servers, easy to deploy and manage, while minimizing energy and cooling consumption</p>
+                                      <a href="#" class="btn btn-primary">Interested</a>
+                                </div>
+                        </div>  
+
+                        <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="{{ url_for('static', filename='m3.jpg')}}" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">PowerEdge M640 Blade Server</h5>
+                                  <p class="card-text">Deliver scalability and high density with a 2-socket, half-height modular blade server ideal for HPC, XaaS and virtualization.</p>
+                                  <a href="#" class="btn btn-primary">Interested</a>
+                            </div>
+                    </div>  
+
+                                            
+                                                         
+                        </div>
+                </div>
+                
+{% endblock content %}

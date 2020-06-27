@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+                <div class="container">
+                        <p class="text-center mt-5 mb-5 proa" >Products</p>
+                        <div class="card-deck ">
+                            
+                                <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="{{ url_for('static', filename='p1.jpg')}}" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Inspiron 13 5390 Laptop</h5>
+                                          <p class="card-text">Powered by 8th Generation Intel® Core™ i5-8265U Processor, Windows 10 Home Plus Single Language, 8GB RAM, 512GB M.2 PCIe NVMe Solid State Drive, Integrated Graphics& FHD LED Backlight Display</p>
+                                          <a href="#" class="btn btn-primary">Interested</a>
+                                        </div>
+                                      </div>
+
+                                      <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="{{ url_for('static', filename='p2.webp')}}" alt="Card image cap">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Inspiron 13 5000 Laptop</h5>
+                                              <p class="card-text">Powered by 10th Generation Intel® Core™ i5-10210U Processor, Windows 10 Home Plus Single Language, 8GB RAM, 512GB M.2 PCIe NVMe Solid State Drive, Integrated Graphics & FHD LED Backlight Display</p>
+                                              <a href="#" class="btn btn-primary">Interested</a>
+                                            </div>
+                                          </div>
+                                          <div class="card" style="width: 18rem;">
+                                                <img class="card-img-top" src="{{ url_for('static', filename='p3.webp')}}" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Inspiron 14 5490 Laptop</h5>
+                                                  <p class="card-text">Customize & Buy: Powered by 10th Generation Intel® Core™ i3-10110U Processor, Windows 10 Home Single Language, 4GB RAM, 512GB M.2 PCIe NVMe SSD, FHD (1920 x 1080) Backlit display.</p>
+                                                  <a href="#" class="btn btn-primary">Interested</a>
+                                                </div>
+                                              </div>             
+                                      
+                                  
+                                            
+                                                         
+                        </div>
+                </div>
+{% endblock content %}
