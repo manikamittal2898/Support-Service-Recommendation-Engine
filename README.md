@@ -1,4 +1,4 @@
-## Ctrl Alt Elite - Service-Support Recommendation Engine
+## Support-Service Recommendation Engine
 
 ### Project Overview
 ----------------------------------
