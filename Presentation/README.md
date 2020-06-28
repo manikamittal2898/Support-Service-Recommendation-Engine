@@ -1,3 +1,3 @@
 ## Presentation
 
-Powerpoint Presentation for the solution to be uploaded in this sub folder.
+The presenation for this project can be found at : https://prezi.com/view/RDq9SYSrhMcWq91pMe4T/
